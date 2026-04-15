@@ -1,0 +1,71 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS do header */
+main {
+    flex: 1;
+}
+main h1{
+    text-align: center;
+    margin-top: 70px;
+}
+main p {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+
+/* CSS das imgs*/
+.move {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    margin-top: 20px;
+}
+
+.move img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 3px solid #fff; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.move img:hover {
+    transform: scale(1.1); 
+}
+
+
+/* CSS do test */
+.test{
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    padding: 0 15px;
+}
+
+
+/* CSS do footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 2px solid #444;
+}
+footer a {
+    color: rosybrown;
+    margin: 0 10px;
+    text-decoration: none;
+}
