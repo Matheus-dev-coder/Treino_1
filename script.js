@@ -1,3 +1,4 @@
+/*
 const canvas = document.getElementById("fire");
 const ctx = canvas.getContext("2d");
 

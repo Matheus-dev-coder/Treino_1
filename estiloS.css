@@ -62,18 +62,29 @@ video {
 }
 footer {
     position: relative;
-    background: #000;
     color: white;
     text-align: center;
     padding: 40px 0;
     overflow: hidden;
+    box-shadow: 0 -10px 40px rgba(138, 43, 226, 0.3);
+}
+
+footer p {
+    color: black;
+    z-index: 2;
+    position: relative;
 }
 
 
-#fire {
+.fire-video {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 110%;
+    object-fit: cover;
+    object-position: bottom ;
+    mix-blend-mode: screen;
+    opacity: 1;
+    pointer-events: none;
 }
