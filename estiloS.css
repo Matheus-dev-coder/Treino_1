@@ -91,8 +91,6 @@ h1:hover::after {
     justify-content: center;
     margin-top: 60px;
     margin-bottom: 60px;
-}
-video {
     width: 700px;
     height: auto;
     border-radius: 10px;
@@ -128,7 +126,7 @@ footer p {
     pointer-events: none;
 }
 /* AJUSTES PRA TELAS PEQUENAS */
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 480px) {
     .container {
         margin-inline: 1rem;
     }
@@ -144,9 +142,20 @@ footer p {
         font-size: 14px;
         line-height: 1.4;
     }
-    .video{
-        max-width: 320px;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .card--container{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+    .ap{
+        max-width: 600px;
         height: auto;
+    }
+    ap p{
+        max-width: 600px;
     }
 }
 

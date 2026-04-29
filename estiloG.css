@@ -188,3 +188,40 @@ footer p{
     font-size: 16px;
     margin-top: 10px;
 }
+/* AJUSTES PRA TELAS PEQUENAS */
+@media screen and (max-width: 480px) {
+    .container {
+        margin-inline: 1rem;
+    }
+    .card--data{
+        width: 250px;
+        padding: 1rem;
+    }
+    .ap{
+        max-width: 320px;
+        height: 200px;
+    }
+    .ap p{
+        font-size: 14px;
+        line-height: 1.4;
+    }
+        .video{
+        width: 320px;
+        display: block;
+        }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .card--container{
+        grid-template-columns: repeat(1fr);
+        column-gap: 1.5rem;
+    }
+    .ap{
+        max-width: auto;
+        height: auto;
+    }
+    ap p{
+        max-width: 600px;
+    }
+}
