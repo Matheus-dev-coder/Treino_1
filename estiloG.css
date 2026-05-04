@@ -203,18 +203,29 @@ footer p{
         padding: 1rem;
     }
     .ap{
-        max-width: 320px;
-        height: 200px;
+        max-width: 420px;
+        height: auto;
     }
     .ap p{
         font-size: 14px;
         line-height: 1.4;
     }
-    .video{
-        width: 320px; 
-        display: block;
-        }
-    
+   body{
+        overflow-x: hidden;
+}
+
+   .video{
+        width: 100% ;
+        height: auto ;
+        
+}
+
+   .vdg{
+       width: 100%;
+       max-width: 100%;
+       height: auto;
+       display: block;
+}
 }
 
 @media screen and (min-width: 768px) {
