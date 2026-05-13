@@ -35,13 +35,14 @@ body{
     height: 100%;
 }
 .card--img {
+    overflow: hidden;
     object-fit: cover;
     object-position: center;
     transition: scale .4s;
 }
 
-.card-shadow {
-    background: linear-gradient(180deg, hsla(0,0%,85%,0) 50%, hsla(0,0%,0%,.3))
+.card--shadow {
+    background: linear-gradient(180deg, hsla(0,0%,85%,0) 50%, hsla(0,0%,0%,.3) 75%)
 }
 .card--data{
     position: absolute;
@@ -74,33 +75,33 @@ body{
     font-size: .875rem;
 }
 
-.card--article {
+.card--active {
     flex: 5;
 }
 
 .card--active .card--data{
     opacity: 1;
-    transform: traslateY(0);
+    transform: translateY(0);
 }
 
 .card--active:hover .card--img {
     scale: 1.1;
 }
 
-.card--active:hover {
+.card--article:hover {
     flex: 5;
 }
 
-.card:has(.card--article:not(.card--active)hover) .card--active {
+.card:has(.card--article:not(.card--active):hover) .card--active {
     flex: 0 0 64px;
 }
 
-.card:has(.card--article:not(.card--active)hover) .card--data {
+.card:has(.card--article:not(.card--active):hover).card--active .card--data {
     opacity: 0;
     transform: translateY(2rem);
 }
 
-.card--active:hover .card--data {
+.card--article:hover .card--data {
     opacity: 1;
     transform: translateY(0);
 }
@@ -138,7 +139,7 @@ body{
         left: 1.5rem;
         bottom: 1.5rem;
     }
-    .card--tile{
+    .card--title{
         white-space: nowrap;
     }
     .card--decription{
