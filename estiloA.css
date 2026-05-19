@@ -35,6 +35,7 @@ body{
     height: 100%;
 }
 .card--img {
+    
     overflow: hidden;
     object-fit: cover;
     object-position: center;
