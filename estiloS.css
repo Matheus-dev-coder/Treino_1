@@ -86,17 +86,21 @@ h1:hover::after {
     filter: brightness(1);
     box-shadow: 0 0 25px rgba(138, 43, 226, 0.7);
 }
+
 .video {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 60px;
     margin-bottom: 60px;
-    width: 700px;
+    width: 600px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 footer {
+    width: 100%;
     z-index: 1;
     position: relative;
     color: white;
@@ -124,38 +128,5 @@ footer p {
     mix-blend-mode: screen;
     opacity: 1;
     pointer-events: none;
-}
-/* AJUSTES PRA TELAS PEQUENAS */
-@media screen and (max-width: 480px) {
-    .container {
-        margin-inline: 1rem;
-    }
-    .card--data{
-        width: 250px;
-        padding: 1rem;
-    }
-    .ap{
-        max-width: 320px;
-        height: 200px;
-    }
-    .ap p{
-        font-size: 14px;
-        line-height: 1.4;
-    }
-    
-}
-
-@media screen and (min-width: 768px) {
-    .card--container{
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1.5rem;
-    }
-    .ap{
-        max-width: 600px;
-        height: auto;
-    }
-    ap p{
-        max-width: 600px;
-    }
 }
 
