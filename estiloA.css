@@ -8,7 +8,7 @@
 }
 body{
       font-family: "Montserrat", sans-serif;
-      background-color: rgb(116, 114, 114);
+      background: linear-gradient(135deg, #f5f7fa 0%, #939599 100%);
 }
 header {
     width: 100%;
